@@ -180,7 +180,7 @@ body {
   color: black;
 }
 
-.about {
+.Coaching/Mechanics {
   width: 100%;
   min-height: 300px;
 }
@@ -312,7 +312,7 @@ body {
   background-color: rgba(153, 255, 187, 1);
 }
 
-.consulting.content {
+.Blog.content {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -374,43 +374,43 @@ body {
   padding: 15px;
 }
 
-/*Contact*/
+/*Home*/
 
-.contact {
+.Home {
   min-height: 400px;
   display: flex;
   justify-content: center;
   padding: 50px;
 }
 
-.contact form {
+.Home form {
   background: #485563;
   background: -webkit-linear-gradient(to right, #29323c, #485563);
   background: linear-gradient(to right, #29323c, #485563);
 }
 
-.contact .form .container {
+.Home .form .container {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
 
-.contact span {
+.Home span {
   color: var(--title-span-color);
 }
 
-.contact .form .container form {
+.Home .form .container form {
   width: 80%;
 }
 
-.contact .short-contact {
+.Home .short-Home {
   display: flex;
   flex-direction: column;
   align-items: left;
   min-height: 400px;
 }
 
-.contact .form input[type="text"],
+.Home .form input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -423,7 +423,7 @@ textarea {
   resize: vertical;
 }
 
-.contact .form input[type="submit"] {
+.Home .form input[type="submit"] {
   border: 3px solid rgb(153, 255, 187);
   text-decoration: none;
   color: rgb(153, 255, 187);
@@ -432,7 +432,7 @@ textarea {
   padding: 10px 25px;
 }
 
-.contact .form input[type="submit"]:hover {
+.Home .form input[type="submit"]:hover {
   background-color: rgba(153, 255, 187, 0.7);
   color: black;
 }
@@ -452,10 +452,10 @@ textarea {
   .container {
     width: 80%;
   }
-  .contact.container {
+  .Home.container {
     width: 80%;
   }
-  .contact .short-contact h2 {
+  .Home .short-Home h2 {
     width: 100%;
   }
 
@@ -555,26 +555,26 @@ textarea {
     padding: 15px !important;
   }
 
-  .contact {
+  .Home {
     flex-direction: column;
     justify-content: center;
   }
 
-  .contact .short-contact {
+  .Home .short-Home {
     width: 100%;
     min-height: 0;
     justify-content: center;
   }
 
-  .contact .short-contact h2 {
+  .Home .short-Home h2 {
     width: fit-content;
   }
 
-  .contact .container {
+  .Home .container {
     width: 90%;
   }
 
-  .contact .form .container form {
+  .Home .form .container form {
     width: 100%;
   }
 
@@ -642,15 +642,15 @@ textarea {
     padding: 0;
   }
 
-  .contact {
+  .Home {
     padding: 10px;
   }
 
-  .contact p {
+  .Home p {
     font-size: var(--font-medium-large) !important;
   }
 
-  .contact .container {
+  .Home .container {
     width: 100%;
   }
 

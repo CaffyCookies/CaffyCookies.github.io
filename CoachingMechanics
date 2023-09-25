@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Esports Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
+        <div class="logo w3-padding-large"> 
+          <p>JCao</p>
+        </div>
+        <div class="mobile-button">
+          <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+        </div>
+        <div class="links">
+          <li><a href="CoachingMechanics.html">Coaching/Mechanics</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li>           
+        </div>
+        <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+           <li><a href="CoachingMechanics.html">Coaching/Mechanics</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+         <li><a href="index.html">Home</a></li>  
+        </div>
+      </nav>
+    </section>
+
+     <section class="CoachingMechanics w3-padding-large w3-container" id="CoachingMechanics">
+      <div class="content container w3-round-large">
+        <h2 style="text-align: center;">- Overview -</h2>
+        <p style="text-align: center;">Valorant, originally known as “Project A” is a competitive strategy based first person shooter. With the wide selection of agents with unique abilities, slower paced movement, and gunplay you must rely on your skills as well as your teammates to win. The format has a similar economic system as CS:GO in which you are rewarded by round wins, plants, and kills but the difference is that it is 13 won rounds to win. The teams are split into defenders and attackers side in which they are swapped after the 12th round. The goal of each round is for attackers to plant the bomb and have it explode or eliminate the entire enemy team. While the objective of the defenders is to prevent the bomb from being planted, defuse the bomb if it is planted, or eliminate the entire enemy team before the bomb is planted.
+</p>
+        <h3 style="text-align: center;">- Audience -</h3>
+        <p>.    This guide is targeted towards more beginner level / lower ranked players, this will be useful as i’ll be talking Coaching/Mechanics the basic mechanics of the game as in gunplay, movement, map/team awareness, and a few other game related tips. Improving any of these areas enough will enhance your gameplay significantly. Valorant is rated PEGI 16"</p>
+        <h2 style="text-align: center;">- Mechanics -</h2>
+        <p>To play the game successfully you must be able to frag (eliminate an enemy), be well positioned, and have impactful utility. To get better at the game, work on the things previously mentioned.
+
+Methods on improving fragging is to work on aim and movement. Aim and movement will be the most important skill to work on when trying to improve early on or in lower ranks. Participating in deathmatches, playing the default game modes, and watching pro players can help improve your movement. For an aim you want to refrain from flicking, learn to incorporate your movement into your aim, try programs like aimlabs to help improve your raw aim, but most importantly work on your crosshair placement (which you can work in deathmatches as well). After improving fragging you want to have a solid understanding of your utility as it can give you the advantage in a fight or even single handedly score you a frag.
+Valorant can be a difficult game to pick up as there are many things you have to learn and account for just to get started. Even after you are accustomed to the sound cues and gunplay, the ever evolving meta and new agents make it impossible to sit still. </p>
+      </div>
+
+     
+        <section class="w3-container footer">
+      <p class="w3-center logo">My Esports Website</p>
+    </section>
+
+
+  <script async>
+      const backToTop = document.getElementById("back-to-top");
+
+      function toggleMobileNavigation() {
+        const mobileNavigation = document.getElementById("mobile-sidenav");
+        mobileNavigation.classList.toggle('mobile-links-active');
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function scroll() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+        else backToTop.style.display = "none";
+      }
+
+      window.onscroll = function() {scroll()};
+  </script>
+  <script async>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+  </script>
+  </body>
+</html>
